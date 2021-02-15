@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon shortcut" href="./bakery-logo.png">
+    <title>Bakery | LOGICADE Portfolio </title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -26,7 +27,7 @@
         <nav class=>
             <ul class="d-flex justify-sb">
                 <li>
-                    <a class="srch-btn" href=""><i class="fas fa-search"></i></a><a href="">SEARCH</a>
+                    <a class="srch-btn" href=""><i class="fas fa-search"></i></a><a class="cursor-not-allowed" href="">SEARCH</a>
 
                 </li>
                 <li>
@@ -34,13 +35,13 @@
                     <hr>
                 </li>
                 <li>
-                    <a href="#">BEAKING IT-UP</a>
+                    <a class="cursor-not-allowed" href="#">BEAKING IT-UP</a>
                 </li>
                 <li>
-                    <a href="#">BREADY TO-GO</a>
+                    <a class="cursor-not-allowed" href="#">BREADY TO-GO</a>
                 </li>
                 <li>
-                    <a href="#">ABOUT</a>
+                    <a class="cursor-not-allowed" href="#">ABOUT</a>
                 </li>
                 <li>
                     <a class="header-btn" href="#">SUBMIT RECIPE</a>
@@ -621,29 +622,29 @@
         <div class="footer-main container-sec">
             <div class="footer-content-1">
                 <ul class="footer-ul color">
-                    <li><a class="color" href="">About</a></li>
-                    <li><a class="color" href="">Menu</a></li>
-                    <li><a class="color" href="">Location&Hours</a></li>
+                    <li><a class="color" href="#">About</a></li>
+                    <li><a class="color" href="#">Menu</a></li>
+                    <li><a class="color" href="#">Location&Hours</a></li>
                 </ul>
                 <ul class="footer-ul color">
-                    <li><a class="color" href="">Store</a></li>
-                    <li><a class="color" href="">Event</a></li>
-                    <li><a class="color" href="">Press</a></li>
+                    <li><a class="color" href="#">Store</a></li>
+                    <li><a class="color" href="#">Event</a></li>
+                    <li><a class="color" href="#">Press</a></li>
                 </ul>
                 <ul class="footer-ul color">
-                    <li><a class="color" class="color" href="">Jobs</a></li>
+                    <li><a class="color" class="color" href="#">Jobs</a></li>
                     <li><a class="color" href="">Content</a></li>
                     <li><a class="color" href="">Recipies</a></li>
                 </ul>
             </div>
             <ul class="footer-ul-2 color">
-                <li><a class="color" href="">Facebook</a></li>
-                <li><a class="color" href="">Instagram</a></li>
-                <li><a class="color" href="">Twitter</a></li>
+                <li><a class="color" href="#">Facebook</a></li>
+                <li><a class="color" href="#">Instagram</a></li>
+                <li><a class="color" href="#">Twitter</a></li>
             </ul>
             <img src="./images/logo.jpg" alt="">
-            <p class="color">
-                © 2020 G.H. Sheldon™ Wholesale Bakery Limited
+            <p class="">
+                © 2020 G.H. Sheldon™ Wholesale Bakery Limited | LOGICADE.io
             </p>
         </div>
         
@@ -651,10 +652,22 @@
 
     </section>
 
-
+    
 
 
     <script src="https://kit.fontawesome.com/b6fdcdf49e.js" crossorigin="anonymous"></script>
+
+    <script>
+        // prevent default
+        document.querySelector('body').addEventListener('click', preventDflt);
+        function preventDflt(e) {
+            var tElment = e.target.getAttribute('href');
+            var tElmentP = e.target.parentElement.getAttribute('href');
+            if (tElment == '#' || tElmentP == '#') {
+                e.preventDefault();
+            }
+        }
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
     </style>

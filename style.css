@@ -55,10 +55,7 @@ a{
     font-weight: bolder;
      
 }
-.color{
-    color: black;
-    font-weight: 400;
-}
+
 .burger-menu{
     display: none;
 }
@@ -80,6 +77,7 @@ header-top
 }
 .header-top span{
     text-decoration: underline;
+    cursor: not-allowed;
     
 }
 /*
@@ -111,13 +109,16 @@ header nav{
 }
  nav ul li+li{
     margin-left: 1.8rem;
-}
+} 
 nav ul li a{
     font-size: 11px;
     
 }
+.cursor-not-allowed{
+    cursor: not-allowed;
+}
 .srch-btn{
-    
+    cursor: not-allowed;
 }
 .header-btn{
     color:#794f29;
@@ -181,7 +182,7 @@ SHOWCASE-SEC
     display: inline-block;
     font-family: 'Poppins';
     font-weight: 100;
-    
+    cursor: not-allowed;
 
 }
 /*
@@ -223,7 +224,7 @@ SEARCH-SEC
     font-size: 20px;
     padding-right: 40px;
     color: #9E8256;
-    
+    cursor: not-allowed;
 }
 .lets-sec {
     font-size: 24px;
@@ -310,7 +311,7 @@ SLIDER-SEC
     padding: 3px 25px;
     display: inline-block;
     font-size: 10px;
-
+    cursor: not-allowed;
     
 }
 .slider-1 p{
@@ -515,6 +516,7 @@ STORY-SEC
   margin-top: 18px;
   font-size: 16px;
     font-weight: 100;
+    cursor: not-allowed;
 }
 /*
 ==================
@@ -599,6 +601,7 @@ INBOX-SEC
 }
 .inbox-email button{
     border: none;
+    cursor: pointer;
 }
 .inbox-email i{
     font-size: 20px;
@@ -616,6 +619,7 @@ FOOTER-SEC
     border-top: 1px solid #B2BABB;
     margin-top: 100px;
     text-align: center;
+    margin-bottom: 50px;
 }
 .footer-main img{
     width: 11%;
@@ -636,9 +640,15 @@ FOOTER-SEC
     font-size: 12px;
     margin-top: 50px;
     margin-right: 25px;
+    
 }
+.footer-ul li {
+    cursor: not-allowed;
+}
+
 .footer-ul li + li{
     margin-left: 30px;
+    
 }
 .footer-ul-2{
     display: flex;
@@ -651,6 +661,11 @@ FOOTER-SEC
 .footer-ul-2 li + li{
     margin-left: 60px;
     
+}
+.color{
+    color: black;
+    font-weight: 400;
+    cursor: not-allowed;
 }
 
 @media (max-width:992px){
