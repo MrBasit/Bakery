@@ -8,7 +8,10 @@ Global Style
 	padding: 0;
 	box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
 
+}
 body{
 	background: #fff;
 	font-family: 'Kulim Park', sans-serif;
@@ -85,15 +88,18 @@ header-top
 header-nav
 ==================
 */
-nav ul hr {
-    width: 45px;
-    height: 2.5px;
-    background-color: #794f29;
+nav{
+    position: relative;
 }
+
 
 header{
     align-items: center;
     padding: .9em 0;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
 }
 header .logo{
     width: 100px;
@@ -248,11 +254,18 @@ SLIDER-SEC
 */
 .slider-main{
     display: flex;
-    overflow: scroll;
-    margin-top: 40px;
+    overflow: hidden;
+    gap: 1rem; 
+}
+.slider{
+    display: flex;
+    gap: 1.5rem;
+    transition: 1s;
+}
+.slider-1{
+    width: 25%;
 }
 .slider-1 + .slider-1 { 
-    margin-left: 40px;
 }
 .slider-bg-brown{
     background-color: #E6BB77;
@@ -264,8 +277,6 @@ SLIDER-SEC
     background-color: #F7F2EE;
 }
 .slider-1{
-    
-    width: 270px;
     border-radius: 20px;
     padding: 35px 35px 35px 35px;
 }
@@ -677,6 +688,7 @@ nav ul li+li{
 nav ul li a {
     font-size: 9px;
     font-weight: bolder;
+    /* transition: 1s; */
 }
 .justify-sb {
     justify-content: space-between;
@@ -1165,3 +1177,4 @@ footer-SEC
 
 
 
+}
