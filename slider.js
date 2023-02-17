@@ -31,3 +31,23 @@ arrowLeft.addEventListener('click', function(){
     }
 })
 
+
+
+var humburger = document.querySelector('.fa-bars');
+var navbar = document.querySelector('nav');
+var header = document.querySelector('.header');
+var cross = document.querySelector('nav > a');
+var ul = document.querySelector('nav ul');
+
+
+humburger.addEventListener('click', function(){
+    navbar.classList.add('tablet-response')
+    cross.classList.add('cross')
+    ul.classList.add('un-list')
+
+})
+cross.addEventListener('click', function(){
+    navbar.classList.remove('tablet-response')
+    cross.classList.remove('cross')
+    ul.classList.remove('un-list')
+})

@@ -91,7 +91,9 @@ header-nav
 nav{
     position: relative;
 }
-
+.cancel{
+    display: none;
+}
 
 header{
     align-items: center;
@@ -808,15 +810,77 @@ header .logo {
     margin-right: 25px;
     padding-left: 10px;
 }
-
-header nav {
+.display-none{
     display: none;
 }
+.cross{
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+}
+.cross:hover{
+    color: #fff;
+}
+header nav{
+    width: 0%;
+}
+.tablet-response{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    left: 0;
+    width: 100%;
+    top: -40px;
+    background-color:#9E8256;
+    position: absolute;
+    height: 100vh;
+    z-index: 100;
+    transition: 1s;
+}
+
+.un-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .burger-menu {
     display: inline;
 }
 .header-top p {
     font-size: 10px;
+}
+
+.tablet-response ul >:first-child{
+    display: none;
+}
+.tablet-response ul >:last-child{
+    display: none;
+}
+
+.tablet-response li{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+.tablet-response li:hover{
+    background-color:#fff;
+    border-radius: .5rem;
+}
+
+
+
+.header-slide{
+   
+}
+
+.cross-toggle{  
+    width: 0%;
 }
 
 /*
