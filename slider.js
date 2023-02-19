@@ -41,6 +41,7 @@ var ul = document.querySelector('nav ul');
 
 
 humburger.addEventListener('click', function(){
+    // navbar.classList.remove('menu-display-none')
     navbar.classList.add('tablet-response')
     cross.classList.add('cross')
     ul.classList.add('un-list')
@@ -50,4 +51,19 @@ cross.addEventListener('click', function(){
     navbar.classList.remove('tablet-response')
     cross.classList.remove('cross')
     ul.classList.remove('un-list')
+})
+
+
+
+
+
+const list = document.querySelectorAll('ul li');
+
+list.forEach(ele => {
+    ele.addEventListener('click', function(){
+        console.log(ele)
+        navbar.classList.remove('tablet-response')
+        ul.classList.remove('un-list')
+        cross.classList.remove('cross')
+    })
 })
